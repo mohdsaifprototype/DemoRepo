@@ -1,4 +1,15 @@
 body{
   padding: 0;
-  background: url('https://picsum.photos/id/23/1920/1080') no-repeat center center/cover;
+}
+
+body::before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: black url('https://picsum.photos/id/203/1920/1080') no-repeat center center/cover;
+  opacity: 0.5;
 }
